@@ -18,8 +18,3 @@ class Solution {
         return -1
     }
 }
-
-fun main() {
-    val sol = Solution()
-    println(sol.solution(626331))
-}
