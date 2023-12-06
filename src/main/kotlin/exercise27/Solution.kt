@@ -2,13 +2,13 @@ package exercise27
 
 class Solution {
     fun solution(phone_number: String): String {
-        var encodedNumber = ""
+        var encodedNumber = StringBuilder()
         for (i in phone_number.indices) {
             if (i < phone_number.length - 4)
-                encodedNumber += "*"
+                encodedNumber.append("*")
             else
-                encodedNumber += phone_number[i]
+                encodedNumber.append(phone_number[i])
         }
-        return encodedNumber
+        return encodedNumber.toString()
     }
 }
