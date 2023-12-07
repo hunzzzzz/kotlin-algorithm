@@ -11,9 +11,8 @@ class QuickSort : Sort {
 
     private fun quickSort(list: ArrayList<Int>, start: Int, end: Int) {
         if (start >= end) return
-        println("list: $list start: $start end: $end")
         val midPoint = partition(list, start, end)
-        println("list: $list start: $start end: $end midpoint: $midPoint")
+
         quickSort(list, start, midPoint - 1)
         quickSort(list, midPoint + 1, end)
     }
