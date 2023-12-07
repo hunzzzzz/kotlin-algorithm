@@ -1,7 +1,7 @@
 package sort
 
 class BubbleSort : Sort {
-    override fun sortAscending(list: ArrayList<Int>): ArrayList<Int> {
+    override fun sortAscending(list: ArrayList<Int>) {
         var temp = 0
 
         for (i in list.indices) {
@@ -13,11 +13,9 @@ class BubbleSort : Sort {
                 }
             }
         }
-
-        return list
     }
 
-    override fun sortDescending(list: ArrayList<Int>): ArrayList<Int> {
+    override fun sortDescending(list: ArrayList<Int>) {
         var temp = 0
 
         for (i in list.indices) {
@@ -29,7 +27,5 @@ class BubbleSort : Sort {
                 }
             }
         }
-
-        return list
     }
 }

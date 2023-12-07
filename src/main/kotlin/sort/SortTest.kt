@@ -1,9 +1,9 @@
 package sort
 
 fun main() {
-    val sort = BubbleSort()
-    val numArray = arrayListOf(5, 2, 3, 4, 1)
+    val numArray = arrayListOf(97, 115, 100, 102, 87, 68, 65, 113)
 
-    sort.sortAscending(numArray)
+    val sort = QuickSort()
+    sort.sortDescending(numArray)
     println(numArray)
 }
