@@ -1,7 +1,8 @@
 package sort
 
 fun main() {
-    val numArray = intArrayOf(97, 115, 100, 102, 87, 68, 65, 113)
+    // intArrayOf(97, 115, 100, 102, 87, 68, 65, 113)
+    val numArray = intArrayOf(2, 2, 2, 6, 2)
 
     val sort = SelectionSort()
     sort.sortAscending(numArray)
