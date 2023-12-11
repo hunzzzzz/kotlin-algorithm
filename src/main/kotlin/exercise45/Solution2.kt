@@ -11,7 +11,6 @@ class Solution2 {
                 else -> newStr.append(ch)
             }
         }
-
         return newStr.toString()
     }
 }
