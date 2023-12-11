@@ -1,9 +1,12 @@
 package sort
 
 fun main() {
-    val numArray = arrayListOf(97, 115, 100, 102, 87, 68, 65, 113)
+    val numArray = intArrayOf(97, 115, 100, 102, 87, 68, 65, 113)
 
-    val sort = QuickSort()
+    val sort = SelectionSort()
+    sort.sortAscending(numArray)
+    println(numArray.contentToString())
+
     sort.sortDescending(numArray)
-    println(numArray)
+    println(numArray.contentToString())
 }
