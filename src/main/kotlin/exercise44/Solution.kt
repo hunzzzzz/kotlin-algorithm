@@ -2,14 +2,15 @@ package exercise44
 
 class Solution {
     fun solution(sizes: Array<IntArray>): Int {
-        var maxWidth = 0
-        var maxHeight = 0
-        var max = 0 //
-        var min = 0
+        var maxWidth = 0 // 지갑의 최대 가로 길이
+        var maxHeight = 0 // 지갑의 최대 세로 길이
+
+        var max: Int
+        var min: Int
 
         for (list in sizes) {
-            max = findMax(list[0], list[1])
-            min = findMin(list[0], list[1])
+            max = findMax(list[0], list[1]) // 명함의 가로, 세로 길이 중 큰 값
+            min = findMin(list[0], list[1]) // 명함의 가로, 세로 길이 중 작은 값
             if ((max > maxWidth) && (max > maxHeight))
                 maxWidth = max
             if (min > maxHeight)
