@@ -26,6 +26,3 @@ class Solution {
         return newStr.toString()
     }
 }
-
-fun main() {
-}
