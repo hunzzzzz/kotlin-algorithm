@@ -25,10 +25,3 @@ class Solution {
         return week[dayIndex]
     }
 }
-
-fun main() {
-    val sol = Solution()
-    println(sol.solution(1, 31))
-    println(sol.solution(2, 29))
-    println(sol.solution(5, 24))
-}
