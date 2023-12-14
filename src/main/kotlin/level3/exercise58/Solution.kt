@@ -25,8 +25,3 @@ class Solution {
         return true
     }
 }
-
-fun main() {
-    val sol = Solution()
-    println(sol.solution(intArrayOf(1, 1, 1, 1)))
-}
