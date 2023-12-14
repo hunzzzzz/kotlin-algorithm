@@ -22,14 +22,15 @@ class Solution {
         return strings
     }
 
+    // 두 문자열의 사전 상 위치를 비교 (str1이 str2보다 사전 상 앞에 있는지, 맞다면 true)
     private fun compareTwoString(str1: String, str2: String): Boolean {
-        val min = if (str1.length >= str2.length) str2 else str1 // 두 문자열 중 길이가 짧은 문자열
+        val min = if (str1.length >= str2.length) str2 else str1
         for (i in min.indices) {
             if (str1[i].code < str2[i].code)
                 return true
             else if (str1[i].code > str2[i].code)
                 return false
         }
-        return (str1.length >= str2.length)
+        return (str1.length <= str2.length)
     }
 }
