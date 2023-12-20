@@ -25,8 +25,3 @@ class Solution {
         return answer.toString()
     }
 }
-
-fun main() {
-    val sol = Solution()
-    println(sol.solution("a", "bcdefghijk", 20))
-}
