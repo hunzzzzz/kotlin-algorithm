@@ -33,8 +33,3 @@ class Solution {
         return if (list.isEmpty()) "-1" else if (list[0][0] == '0') "0" else list.joinToString("")
     }
 }
-
-fun main() {
-    val sol = Solution()
-    println(sol.solution("12321", "42531"))
-}
